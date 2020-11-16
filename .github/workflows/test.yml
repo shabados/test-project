@@ -9,6 +9,6 @@ jobs:
     # Uses a ubuntu-lates runner to complete the requested steps
     runs-on: ubuntu-latest
     steps:
-    - uses: shabados/actions/actions/test-action-1@main
+    - uses: shabados/actions/actions/test-action-1
       with:
         who-to-greet: 'John Doe'
