@@ -1,0 +1,14 @@
+name: Say hello!
+
+# GitHub Actions Workflows are automatically triggered by GitHub events
+on: [push]
+    
+# When the event is triggered, GitHub Actions will run the jobs indicated
+jobs:
+  say_hello:
+    # Uses a ubuntu-lates runner to complete the requested steps
+    runs-on: ubuntu-latest
+    steps:
+    - uses: shabados/actions/test-action-1
+      with:
+        who-to-greet: 'John Doe'
